@@ -1,8 +1,8 @@
 <?php
 // Database credentials are NOT stored in Git. They are loaded from reg-config.php,
-// which sits next to this file on the server only (see reg-config.example.php).
+// which sits in the _private folder on the server only (see reg-config.example.php).
 // (Plesk open_basedir blocks reading files above httpdocs on this host.)
-require __DIR__ . '/reg-config.php';
+require __DIR__ . '/_private/reg-config.php';
 
 $code  = isset($_GET['code']) ? $_GET['code'] : '';
 $found = false;
