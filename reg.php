@@ -1,6 +1,29 @@
 <?php
-// Database credentials live in reg-config.php (NOT in Git). See reg-config.example.php.
-require __DIR__ . '/reg-config.php';
+// Database credentials are NOT stored in Git. Looked up in this order:
+//   1. environment variables SL_DB_HOST, SL_DB_PORT, SL_DB_USER, SL_DB_PASS, SL_DB_NAME
+//   2. PHP settings sl.db_host, sl.db_port, sl.db_user, sl.db_pass, sl.db_name
+//      (Plesk > PHP Settings > Additional configuration directives)
+//   3. reg-config.php one folder above httpdocs (recommended on Plesk)
+//   4. reg-config.php next to this file
+function slSetting($env, $ini, $default = '') {
+    $v = getenv($env);
+    if ($v !== false && $v !== '') return $v;
+    $v = get_cfg_var($ini);
+    if ($v !== false && $v !== '') return $v;
+    return $default;
+}
+
+$hostname = slSetting('SL_DB_HOST', 'sl.db_host');
+$port     = (int) slSetting('SL_DB_PORT', 'sl.db_port', '3306');
+$username = slSetting('SL_DB_USER', 'sl.db_user');
+$password = slSetting('SL_DB_PASS', 'sl.db_pass');
+$dbname   = slSetting('SL_DB_NAME', 'sl.db_name', 'slwin');
+
+if ($password === '') {
+    foreach (array(__DIR__ . '/../reg-config.php', __DIR__ . '/reg-config.php') as $cfg) {
+        if (is_file($cfg)) { require $cfg; break; }
+    }
+}
 
 $code  = isset($_GET['code']) ? $_GET['code'] : '';
 $found = false;
