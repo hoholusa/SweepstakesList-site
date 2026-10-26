@@ -1,0 +1,7 @@
+node_modules/
+_site/
+_to_delete/
+.DS_Store
+.dev.vars
+*.tgz
+reg-config.php
