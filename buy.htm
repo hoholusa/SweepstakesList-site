@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registration &mdash; Sweepstakes List</title>
+  <meta name="description" content="Sweepstakes List Sales page">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="container">
+    <div class="banner"><h1>Registration</h1></div>
+  </header>
+
+  <div class="container layout">
+    <nav class="sidebar" aria-label="Primary">
+      <ul class="btns">
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/download.htm">Download</a></li>
+      
+        <li><a href="/pictures.htm">Screens</a></li>
+      
+        <li><a href="/details.htm">Features</a></li>
+      
+        <li><a href="/wins.htm">Hall of Fame</a></li>
+      
+        <li><a href="/sweeps.htm">Enter to Win</a></li>
+      
+        <li><a href="/news.htm">News</a></li>
+      
+        <li><a href="/support.htm">Support</a></li>
+      
+        <li><a href="/buy.htm" aria-current="page">Registration</a></li>
+      
+      </ul>
+    </nav>
+
+    <main id="main" class="content">
+      
+      <p>To purchase Sweepstakes List, <a href="download.htm">download</a> and install the trial version, then register it here.</p>
+
+<p><b>Sweepstakes List retails for $29.99.</b></p>
+
+<p>ARDA uses PayPal to process Sweepstakes List purchases.<br>
+To buy Sweepstakes List, enter your Registration Code and use the PayPal button to send a payment.<br>
+You can find your Registration Code by selecting "About" from the Sweepstakes List "Help" menu.</p>
+
+<p>Your registration is activated within 24 hours.</p>
+
+<script language="JavaScript" type="text/javascript"><!--
+function FrontPage_Form1_Validator(theForm)
+{
+
+  if (theForm.os0.value == "")
+  {
+    alert("Please enter a value for the \"Registration Code\" field.");
+    theForm.os0.focus();
+    return (false);
+  }
+
+  if (theForm.os0.value.length < 10)
+  {
+    alert("Please enter at least 10 characters in the \"Registration Code\" field.");
+    theForm.os0.focus();
+    return (false);
+  }
+
+  if (theForm.os0.value.length > 10)
+  {
+    alert("Please enter at most 10 characters in the \"Registration Code\" field.");
+    theForm.os0.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-";
+  var checkStr = theForm.os0.value;
+  var allValid = true;
+  var validGroups = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"Registration Code\" field.");
+    theForm.os0.focus();
+    return (false);
+  }
+
+  var chkVal = allNum;
+  var prsVal = parseInt(allNum);
+  if (chkVal != "" && !(prsVal >= "1000000000"))
+  {
+    alert("Please enter a value greater than or equal to \"1000000000\" in the \"Registration Code\" field.");
+    theForm.os0.focus();
+    return (false);
+  }
+  return (true);
+}
+//--></script>
+<form class="pay" action="https://www.paypal.com/cgi-bin/webscr" method="post" onsubmit="return FrontPage_Form1_Validator(this)" name="FrontPage_Form1">
+  <input type="hidden" name="cmd" value="_xclick">
+  <input type="hidden" name="business" value="payment@sweepstakeslist.com">
+  <input type="hidden" name="item_name" value="Sweepstakes List">
+  <input type="hidden" name="amount" value="29.99">
+  <input type="hidden" name="page_style" value="PayPal">
+  <input type="hidden" name="no_shipping" value="1">
+  <input type="hidden" name="return" value="http://www.sweepstakeslist.com/buythanks.htm">
+  <input type="hidden" name="no_note" value="1">
+  <input type="hidden" name="currency_code" value="USD">
+  <input type="hidden" name="lc" value="US">
+  <input type="hidden" name="on0" value="Registration Code">
+  <label for="os0">Registration Code</label>
+  <input id="os0" type="text" name="os0" maxlength="10" value="" inputmode="numeric" autocomplete="off">
+  <p><input type="image" src="https://www.paypal.com/en_US/i/btn/x-click-but5.gif" name="submit" alt="Make payments with PayPal - it's fast, free and secure!"></p>
+</form>
+
+<p>If you received a voucher to register Sweepstakes List, you can use it <a href="buy_voucher.htm">here</a>.</p>
+
+<p>Problems with payment? Contact <a href="mailto:payment@sweepstakeslist.com">payment@sweepstakeslist.com</a></p>
+
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <nav class="footer-nav" aria-label="Footer">
+        <ul>
+        
+          <li><a href="/privacy.htm">Privacy Policy</a></li>
+        
+          <li><a href="/smf/">Forum</a></li>
+        
+          <li><a href="/search.htm">Search</a></li>
+        
+          <li><a href="/contact.htm">Contact Info</a></li>
+        
+          <li><a href="/feedback.htm">Leave Feedback</a></li>
+        
+          <li><a href="https://x.com/SweepstakesList?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @SweepstakesList</a><script async src="https://platform.x.com/widgets.js" charset="utf-8"></script></li>
+        
+          <li><a class="mail-icon" href="mailto:webmaster@sweepstakeslist.com" aria-label="E-Mail WebMaster"><svg width="20" height="14" viewBox="0 0 20 14" aria-hidden="true" focusable="false"><rect x="0.75" y="0.75" width="18.5" height="12.5" rx="1.5" fill="#fff" stroke="currentColor" stroke-width="1.5"/><path d="M1.5 1.8 L10 8 L18.5 1.8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></a></li>
+        
+        </ul>
+      </nav>
+      <p class="copyright">&copy; 2026 ARDA</p>
+    </div>
+  </footer>
+</body>
+</html>

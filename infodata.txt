@@ -1,0 +1,5 @@
+[BuyPage] www.sweepstakeslist.com/buy.htm
+[Version] 1.06
+[wrz#cnt] 0
+[lst-Ver] 1.01
+[Gagarin] SL1961
