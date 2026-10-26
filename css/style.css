@@ -177,3 +177,6 @@ form button,form input[type="submit"]{margin-top:1rem;background:var(--btn);bord
 .prize-prev summary{cursor:pointer;font-weight:bold}
 .prize-prev[open] summary{margin-bottom:.6rem}
 .prize-current img{max-width:200px;height:auto}
+
+.hof-pic{text-align:center}
+.hof-pic img{margin-left:auto;margin-right:auto}
