@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /reg.php
+Disallow: /buythanks.htm
+Disallow: /feedback_thanks.htm
+
+Sitemap: https://www.sweepstakeslist.com/sitemap.xml
