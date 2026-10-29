@@ -1,0 +1,8 @@
+ME|Microsoft Edge|Edge|msedge.exe|
+FF|Mozilla FireFox|FireFox|firefox.exe|
+MX|Maxthon|Maxthon|maxthon.exe|
+CH|Google Chrome|Chrome|chrome.exe|
+LN|Lunascape|Luna|lunascape.exe|HKEY_CURRENT_USER\Software\Clients\StartMenuInternet\Lunascape\shell\open\command
+OP|Opera|Opera|opera.exe|
+VI|Vivaldi|Vivaldi|vivaldi.exe|
+BR|Brave|Brave|brave.exe|
