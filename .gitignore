@@ -6,3 +6,4 @@ _to_delete/
 *.tgz
 reg-config.php
 ca-crt/
+CLAUDE.md
