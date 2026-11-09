@@ -2,5 +2,7 @@ User-agent: *
 Disallow: /reg.php
 Disallow: /buythanks.htm
 Disallow: /feedback_thanks.htm
+Disallow: /cron.php
+Disallow: /smf/cron.php
 
 Sitemap: https://www.sweepstakeslist.com/sitemap.xml
